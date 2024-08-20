@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador de Textos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav><img src="/recursos/logo.png" alt="logo de alura"></nav>
+    </header>
+
+        <div class="container">
+            <h1>Encriptador y Desencriptador de Textos</h1>
+            <div class="content-container">
+                <div class="encryption-container">
+                    <h2>Encriptar Texto</h2>
+                    <textarea id="input-text" placeholder="Ingrese su texto aquí..."></textarea>
+                    <p class="advertencia">•Solo letras minúsculas y sin acentos</p>
+                    <button onclick="encriptarTexto()">Encriptar</button>
+                    <button onclick="desencriptarTexto()">Desencriptar</button>
+                </div>
+                <div class="decryption-container">
+                    <h2>Desencriptar Texto</h2>
+                    <div id="image-container">
+                        <img src="/recursos/1.png" alt="Imagen placeholder" id="placeholder-image" style="width: 60%; ">
+                    </div>
+                    <textarea id="output-text" placeholder="El resultado aparecerá aquí..." readonly style="display: none;"></textarea>
+                    <button onclick="copiarTexto()" id="copiar-button" style="display: none;">Copiar</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Armando Larios Arreola. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/LucksThorsoft" target="_blank" title="GitHub">
+                    <img src="/recursos/git.png" alt="GitHub">
+                </a>
+                <a href="www.linkedin.com/in/armando-larios-arreola" target="_blank" title="LinkedIn">
+                    <img src="/recursos/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </footer>
+        
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
